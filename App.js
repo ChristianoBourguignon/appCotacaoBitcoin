@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, SafeAreaView, StatusBar } from 'react-native';
 import CurrentPrice from './src/components/CurrentPrice';
 import HistoryGraphic from './src/components/HistoryGraphic';
 import QuotationsList from './src/components/QuotationsList';
+import QuotationsItems from './src/components/QuotationsList/QuatationsItems';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <CurrentPrice />
       <HistoryGraphic />
       <QuotationsList />
+      <QuotationsItems />
     </SafeAreaView>
   );
 }
@@ -22,6 +24,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: Platform.OS === "android" ? 40:0 
+    paddingTop: Platform.OS === "android" ? 40:0 ,
   },
 });
